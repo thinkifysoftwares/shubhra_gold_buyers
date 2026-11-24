@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+@import url('/assets/styles.css');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Admin Panel */
+
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f6fa;
+  }
+  
+  .admin-sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background: #20252b;
+    color: #fff;
+    padding: 25px 15px;
+    flex-shrink: 0;
+  }
+  
+  .sidebar-brand {
+    padding: 10px 15px;
+    border-bottom: 1px solid #444;
+  }
+  
+  .sidebar-brand h5 {
+    color: #d6b15e;
+    margin-bottom: 5px;
+  }
+  
+  .sidebar-brand small {
+    color: #bbb;
+  }
+  
+  .admin-sidebar .nav-link {
+    color: #ddd;
+    padding: 13px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .admin-sidebar .nav-link.active,
+  .admin-sidebar .nav-link:hover {
+    background: #d6b15e;
+    color: #20252b;
+  }
+  
+  .admin-main {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .admin-navbar {
+    background: #fff;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  
+  .admin-content {
+    padding: 30px;
+  }
+  
+  .admin-login-page {
+    background: #f5f6fa;
+    min-height: 100vh;
+  }
+  
+  .admin-login-page .card {
+    border-radius: 12px;
+  }
+  
+  @media (max-width: 768px) {
+    .admin-sidebar {
+      width: 180px;
+    }
+  
+    .admin-content {
+      padding: 15px;
+    }
+  
+    .admin-navbar {
+      padding: 15px;
+    }
+  }
